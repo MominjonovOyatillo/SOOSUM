@@ -11,14 +11,6 @@ class Header(models.Model):
 class Info(models.Model):
     text_uz = models.CharField(max_length=255)
     text_ru = models.CharField(max_length=255)
-    facebok = models.URLField()
-    facebok_img = models.ImageField(upload_to='media/')
-    Instagram = models.URLField()
-    Instagram_img = models.ImageField(upload_to='media/')
-    telegram = models.URLField()
-    telegram_img = models.ImageField(upload_to='media/')
-    youtube = models.URLField()
-    youtube_img = models.ImageField(upload_to='media/')
     logo = models.ImageField(upload_to='media/')
     
 
@@ -73,3 +65,13 @@ class Abouttea(models.Model):
     question_uz = models.CharField(max_length=255)
     text_uz = models.TextField()
     text_ru = models.TextField()
+    
+class Ijtimoiy(models.Model):
+    facebok = models.URLField()
+    facebok_img = models.ImageField(upload_to='media/')
+    Instagram = models.URLField()
+    Instagram_img = models.ImageField(upload_to='media/')
+    telegram = models.URLField()
+    telegram_img = models.ImageField(upload_to='media/')
+    youtube = models.URLField()
+    youtube_img = models.ImageField(upload_to='media/')
