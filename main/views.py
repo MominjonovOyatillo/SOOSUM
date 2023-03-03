@@ -89,3 +89,10 @@ def get_abouttea(request):
     aboutt = Abouttea.objects.all()
     ser = AboutteaSerializer(aboutt, many=True)
     return Response(ser.data)
+
+
+@api_view(['GET'])
+def get_ijtimoiy(request):
+    ijtimoiy = Ijtimoiy.objects.all()
+    ser = IjtimoiySerializer(ijtimoiy, many=True)
+    return Response(ser.data)
