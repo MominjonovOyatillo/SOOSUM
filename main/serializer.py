@@ -63,8 +63,14 @@ class AboutteaSerializer(serializers.ModelSerializer):
     class Meta:
         model = Abouttea
         fields = '__all__'
- 
+
 class IjtimoiySerializer(serializers.ModelSerializer):
     class Meta:
         model = Ijtimoiy
         fields = '__all__'
+
+
+class DiscountSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Discount
+        fields = "__all__"
