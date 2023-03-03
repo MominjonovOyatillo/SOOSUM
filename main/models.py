@@ -17,11 +17,10 @@ class Info(models.Model):
 class Product(models.Model):
     name_uz = models.CharField(max_length=255)
     name_ru = models.CharField(max_length=255)
-    logo = models.ImageField(upload_to='media/')
-    cost = models.IntegerField()
+    img = models.ImageField(upload_to='media/')
 
 class Productinfo(models.Model):
-    logo = models.ImageField(upload_to='media/')
+    img = models.ImageField(upload_to='media/')
     text_uz = models.TextField()
     text_ru = models.TextField()
 
@@ -30,6 +29,7 @@ class Aboutus(models.Model):
     title_ru = models.CharField(max_length=255)
     text_uz = models.TextField()
     text_ru = models.TextField()
+    img = models.ImageField(upload_to='media/')
 
 class Faq(models.Model):
     desc_uz = models.CharField(max_length=255)
@@ -65,7 +65,8 @@ class Abouttea(models.Model):
     question_uz = models.CharField(max_length=255)
     text_uz = models.TextField()
     text_ru = models.TextField()
-    
+
+
 class Ijtimoiy(models.Model):
     facebok = models.URLField()
     facebok_img = models.ImageField(upload_to='media/')
@@ -75,3 +76,8 @@ class Ijtimoiy(models.Model):
     telegram_img = models.ImageField(upload_to='media/')
     youtube = models.URLField()
     youtube_img = models.ImageField(upload_to='media/')
+
+
+class Discount(models.Model):
+    old_price = models.IntegerField()
+    new_price = models.IntegerField()
