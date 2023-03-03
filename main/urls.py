@@ -14,4 +14,5 @@ urlpatterns = [
     path('get-faq/', get_faq),
     path('get-advice/', get_advice),
     path('get-abouttea/', get_abouttea),
+    path('get-ijtimoiy/', get_ijtimoiy),
 ]
